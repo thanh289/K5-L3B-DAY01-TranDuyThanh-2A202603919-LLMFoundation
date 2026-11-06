@@ -15,16 +15,16 @@
 
 ## 2. Kết quả chính
 
-| Cách làm | F1 test | F1 SUB 40 | p95 (ms/tin) | USD/1k tin |
+| Cách làm | F1 test | F1 SUB 40 | p95 (ms/tin) |
 | --- | ---: | ---: | ---: | ---: |
-| BoW + LogReg | 0.928 | 0.974 | 0.108 | 0 |
-| BoW + MLP | 0.974 | 0.974 | 0.379 | 0 |
-| Encoder + kNN | 0.936 | 1.000 | 54.964 | 0 |
-| Encoder + LogReg | 0.980 | 0.950 | 32.865 | 0 |
-| Encoder + MLP | 0.985 | 0.976 | 33.319 | 0 |
-| LLM nhỏ zero-shot | — | 0.974 | 1526.029 | 0.008 |
-| LLM lớn zero-shot | — | 1.000 | 1232.793 | 0.076 |
-| LLM nhỏ few-shot | — | 1.000 | 1604.817 | 0.017 |
+| BoW + LogReg | 0.928 | 0.974 | 0.108 |
+| BoW + MLP | 0.974 | 0.974 | 0.379 |
+| Encoder + kNN | 0.936 | 1.000 | 54.964 |
+| Encoder + LogReg | 0.980 | 0.950 | 32.865 |
+| Encoder + MLP | 0.985 | 0.976 | 33.319 |
+| LLM nhỏ zero-shot | — | 0.974 | 1526.029 |
+| LLM lớn zero-shot | — | 1.000 | 1232.793 |
+| LLM nhỏ few-shot | — | 1.000 | 1604.817 |
 
 LLM chỉ được đánh giá trên SUB 40. Encoder + MLP có F1 test cao nhất trong các cách đạt p95 dưới 50 ms, còn LLM khá chậm.
 
